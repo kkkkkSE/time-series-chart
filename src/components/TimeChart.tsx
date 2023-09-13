@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Chart } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
+  registerables,
   TimeSeriesScale,
   CategoryScale,
   LinearScale,
@@ -24,6 +25,7 @@ import { ChartValueType } from '@/types';
 
 import FilterButtons from './FilterButtons';
 
+ChartJS.register(...registerables);
 ChartJS.register(
   TimeSeriesScale,
   CategoryScale,
