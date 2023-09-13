@@ -16,6 +16,12 @@ module.exports = {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
+      typescript: {},
+      alias: {
+        map: [
+          ['@', './src'],
+        ],
+      },
     },
   },
   rules: {
